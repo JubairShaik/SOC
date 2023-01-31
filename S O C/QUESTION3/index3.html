@@ -1,0 +1,247 @@
+<!-- Question No-003 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION03</title>
+    <link rel="stylesheet" href="../QUESTION3/index3.css">
+</head>
+<body>
+
+  <style>
+    *{
+      margin: 10px;
+      
+       
+      
+  }
+  
+  body{
+      background: rgb(185, 210, 245);
+  }
+  
+  .heading{
+      font-size: 4rem;
+      letter-spacing: 1rem;
+      text-transform: uppercase;
+      
+  }
+  
+  
+  img{
+      /* object-fit: contain; */
+      /* object-fit: contain; */
+      object-fit: contain;
+      object-fit: fill;
+  }
+  
+  .text3{
+      text-align: center;
+      border-radius: 50rem;
+  }
+  
+  
+  .imgbox{
+      height: 24rem;
+    
+  
+  }
+  
+  .rightside{
+      background: #000;
+  }
+  
+  .leftside{
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .aboutme{
+      display: flex;
+  }
+  h3{
+      font-size: 5rem;
+  }
+  h2{
+      font-size: 3rem;
+      color: aqua;
+      text-transform: uppercase;
+  }
+  
+  
+  input{
+      width: 15rem;
+      padding: 10px;
+  }
+  
+  Button{
+      width: 10rem;
+      padding: 10px;
+  }
+
+
+  .myname{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: blueviolet;
+    font-size: 10rem;
+
+  }
+  </style>
+
+
+    <div>
+        <h1>QUESTION--3a)-</h1>
+        <ol>
+            <li>Mercury
+              <ul>
+                <li>No moons</li>
+              </ul>
+            </li>
+
+            <li>Venus
+              <ul>
+                <li>No moons</li>
+              </ul>
+            </li>
+
+            <li>Earth
+              <ul>
+                <li>Moon</li>
+              </ul>
+            </li>
+            <li>Mars
+              <ul>
+                <li>Phobos</li>
+                <li>Deimos</li>
+              </ul>
+            </li>
+            <li>Jupiter
+              <ul>
+                <li>Io</li>
+                <li>Europa</li>
+                <li>Ganymede</li>
+                <li>Callisto</li>
+              </ul>
+            </li>
+            <li>Saturn
+              <ul>
+                <li>Mimas</li>
+                <li>Enceladus</li>
+                <li>Tethys</li>
+                <li>Dione</li>
+                <li>Rhea</li>
+                <li>Titan</li>
+              </ul>
+            </li>
+            <li>Uranus
+              <ul>
+                <li>Miranda</li>
+                <li>Ariel</li>
+                <li>Umbriel</li>
+                <li>Titania</li>
+                <li>Oberon</li>
+              </ul>
+            </li>
+            <li>Neptune
+              <ul>
+                <li>Triton</li>
+                <li>Nereid</li>
+              </ul>
+            </li>
+          </ol>
+          
+    </div>
+
+
+
+    <!-- css QUESTION ---------------------------- -->
+    <br>
+    <br>
+    
+    <h1>QUESTION--3b)-</h1>
+    <div class="aboutme">
+ 
+
+
+
+        <div class="leftside">
+            <H3>About meeee</H3>
+            <h3 class="myname">Jubair Ahmed</h3>
+            <p class="text">Lorem ipsum dolor, sit amet consectetur
+                 adipisicing elit. Eum totam sequi, quasi autem,
+                  suscipit illo possimus voluptas obcaecati laboriosam
+                   repellendus eos recusandae fuga dicta labore ipsum ut 
+                   facere cum praesentium dolorem enim temporibus exercitationem
+                    eius saepe. Quam expedita animi ut rerum voluptate veritatis
+                     dolorum, voluptatibus dolore ex aut culpa quaerat in voluptates commodi eaque? Nesciunt ratione assumenda quisquam, in enim nam quidem aliquam laboriosam ipsam cupiditate aspernatur, praesentium reprehenderit iusto recusandae perferendis pariatur, et temporibus! Quod libero voluptates eaque doloribus similique beatae placeat dolorem asperiores nihil id? Ea, sunt odio
+                 delectus animi vitae ipsum, dolores, et voluptate nulla quis iste.</p>
+
+
+                 <div>
+                    <h3>Skills</h3>
+                     <li>App Develepment</li>
+                     <li> Web Develepment</li>
+                     <li>AI Develepment</li>
+                    </div>
+        </div>
+
+       
+    </div>
+
+
+   
+   
+
+    <!-- JS QUESTION-   -->
+    <h1>QUESTION--3c)-</h1>
+
+    <div>
+        
+          <input type="text"  placeholder="Enter Your Name" id="userInput">
+          <Button onclick="submit()">Submit</Button>
+          <div>
+            <p id="result"></p>
+          </div>
+         
+    </div>
+
+
+    <script>
+
+      function submit(){
+
+        event.preventDefault();
+        const userInput = document.getElementById("userInput").value;
+        result.textContent = document.getElementById("result");
+        result.textContent =("User Entered : "+userInput) ;
+      }
+
+      
+
+      
+    </script>
+
+
+
+
+
+
+ <!-- <script>
+
+   const forms = document.querySelector("form");
+   form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    const userInput = document.getElementById("userInput").value;
+    console.log("User entered: ", userInput);
+    // Check in console
+  });
+ 
+
+ </script>
+     -->
+</body>
+</html>

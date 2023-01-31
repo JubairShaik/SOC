@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    h2{
+        background: blue;
+        text-align: center;
+    }
+    .mainDiv{ 
+        background-image: url("https://tse4.mm.bing.net/th?id=OIP.PYipJ_hSncugM2SwnZitvgHaEK&pid=Api&P=0");
+    }
+    .textp{
+        margin: 10px;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <h1 class="maintext">Registration Form</h1>
+        <div class="form">
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="enter Your Name">
+
+                <div class="">
+                    <label for="emailInput">Email</label>
+                <input type="email" placeholder="Enter Your Email" >
+                </div>
+
+                <div class="">
+                    <label for="emailInput">Password</label>
+                <input type="password" placeholder="Enter Your PAssword" >
+
+                <div class="section">
+                    <span>Select Your Gender</span>
+                    <input type="radio" id="maleInput"  name="genderInput"  value="name" >
+                    <label for="maleInput">Male</label>
+                    <input type="radio" id="femaleInput"  name="genderInput"  value="female" >
+                    <label for="femaleInput">Male</label>
+                    <input type="radio" id="others"  name="genderInput"  value="others" >
+                    <label for="others">Male</label>
+                </div>
+
+
+                <div class="section">
+                    <span>Select Your Language</span>
+                    <input type="radio" id="lang1Input"  name="genderInput"  value="name" >
+                    <label for="lang1Input">Telugu</label>
+                    <input type="radio" id="lang2Input"  name="genderInput"  value="female" >
+                    <label for="lang2Input">Hindi</label>
+                    <input type="radio" id="lang3Input"  name="genderInput"  value="others" >
+                    <label for="lang3Input">English</label>
+                </div>
+                
+
+                <div class="#">
+                        <h3>Qualification </h3>
+                        <select name="Qualification" id="#">
+                            <option value=" "> Select One</option>
+                            <option value="HighSchool">Low Scool</option>
+                            <option value="HighSchool">Loabot Scool</option>
+                            <option value="HighSchool">High Scool</option>
+                        </select>
+                </div>
+                <div>
+                    <label for="photoInput"> Choose a Photo  </label>
+                    <input type="file" name="photoInput" id="photoInput">
+                    <br>
+                    <button>Submit</button>
+                    <button>Reset</button>
+                </div>
+
+                </div>
+            </form>
+            
+        </div>
+    </div>
+ 
+<!-- 6(b) -->
+
+<div class="#">
+
+     
+    <div class="box">
+        <h2>Welcome To css</h2>
+
+        <div class="mainDiv">
+            <p class="textp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci suscipit, 
+                unde ad numquam quia ipsa, sequi minima perferendis est incidunt, earum
+                 aspernatur sunt? Nesciunt labore iste, voluptates rerum expedita odio sunt
+                  eaque inventore assumenda totam, quibusdam ipsum pariatur ipsa cumque veritatis.
+                   Quos accusantium harum, culpa odio quasi sequi voluptates labore! Asperiores ab,
+                amet, dicta 
+                    corporis, praesentium placeat, vel vitae quod quasi expedita nostrum. Saepe,
+                     excepturi itaque a blanditiis esse et quidem. Quidem consequuntur aspernatur
+                     optio assumenda ea adipisci vel tempore.</p>
+        </div>
+        
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Answer For 6)c):  CALCI -->
+
+
+
+    <div class="#">
+        <input type="text"  id="num1">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text"   id="num2">
+        <button onclick="equals()">=</button>
+        <input type="text" id="result">
+    </div>
+
+<script>
+
+    function equals(){
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        var operator = document.getElementById("operator").value;
+        if(operator==='+'){
+            document.getElementById("result").value=num1+num2;
+        }
+        if(operator==='-'){
+            document.getElementById("result").value=num1-num2;
+        }
+        if(operator==='*'){
+            document.getElementById("result").value=num1*num2;
+        }
+        if(operator==='/'){
+            document.getElementById("result").value=num1/num2;
+        }
+    }
+</script>
+    
+</body>
+</html>

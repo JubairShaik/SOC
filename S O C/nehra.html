@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="otp">
+        <h1>OTP Question</h1>
+        <button onclick="generateOtp()">CLICK HERE TO GENERATE OTP</button>
+		<div>
+			<p id="result"></p>
+		</div>
+    </div>
+
+    <script>
+		function generateOtp(){
+			let otp = Math.ceil((Math.random()*1000000));  
+		    result.textContent = document.getElementById("result");
+			result.textContent = otp;
+		}
+    </script>
+    
+</body>
+</html>

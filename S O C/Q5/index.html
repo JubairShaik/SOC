@@ -1,0 +1,184 @@
+<!-- Question no (5) -->
+
+
+
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Question -05</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        
+    </head>
+    <style>
+        
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgb(167, 164, 164);
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        padding: 50px;
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      
+      label,
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      select,
+      input[type="file"] {
+        width: 100%;
+        height: 40px;
+        font-size: 13px;
+        padding: 10px;
+      }
+       
+
+      .heading{
+        text-transform: uppercase;
+      }
+      .heading2{
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+
+      .section{
+        background: rgb(220, 213, 213);
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+
+      .section2{
+        display: flex;
+      }
+      button{
+        margin-top: 10px;
+        margin-right: 30px;
+        padding: 6px;
+      } 
+    </style>
+
+    <body>
+
+        <div class="container">
+            <h1>Registration Form</h1>
+            <form id="registrationForm">
+              <label for="nameInput">Name:</label>
+              <input type="text" placeholder="Enter Your Name" id="nameInput" >
+          
+              <label for="emailInput">Email:</label>
+              <input type="email" placeholder="Enter Your e-mail Adress" id="emailInput" >
+          
+              <label for="passwordInput">Password:</label>
+              <input type="password" id="passwordInput" placeholder="Enter Your Password" >
+          
+              <div class="section">
+                <span class="heading"> Select Your Language</span>
+
+              <input type="radio" id="maleInput" name="genderInput" value="male">
+              <label for="maleInput">Male</label>
+              <input type="radio" id="femaleInput" name="genderInput" value="female">
+              <label for="femaleInput">Female</label>
+              <input type="radio" id="otherInput" name="genderInput" value="other">
+              <label for="otherInput">Other</label>
+              </div>
+          
+             <div class="section">
+                <span class="heading">  Your Language</span>
+
+                <input type="checkbox" id="englishInput" name="languagesInput" value="english">
+                <label for="englishInput">English</label>
+
+                <input type="checkbox" id="spanishInput" name="languagesInput" value="spanish">
+                <label for="spanishInput">Spanish</label>
+                
+                <input type="checkbox" id="frenchInput" name="languagesInput" value="french">
+                <label for="frenchInput">French</label>
+             </div>
+          
+             <div class="section2" >
+                
+              <label class="heading2">Qualification:</label>
+              <select id="qualificationInput"  title="select" name="qualificationInput">
+                <option value="">Select one</option>
+                <option value="high school">High School</option>
+                <option value="college">College</option>
+                <option value="university">University</option>
+              </select>
+             </div>
+          
+             <div>
+                 <label for="photoInput">  Choose a Photo:</label>
+              <input type="file" id="photoInput" name="photoInput">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+             </div>
+            </form>
+
+
+
+
+            <div>
+                5B is Easy
+            </div>
+
+
+            <!-- 5c -->
+
+            <div class="calculator">
+                <form>
+                  <input type="text" id="display">
+                  <br><br>
+
+                <div>
+                    <input type="button" value="1" onclick="document.getElementById('display').value+='1'">
+                    <input type="button" value="2" onclick="document.getElementById('display').value+='2'">
+                    <input type="button" value="3" onclick="document.getElementById('display').value+='3'">
+                    <input type="button" value="+" onclick="document.getElementById('display').value+='+'">
+                </div>
+                  <br>
+                 <div>
+                    <input type="button" value="4" onclick="document.getElementById('display').value+='4'">
+                    <input type="button" value="5" onclick="document.getElementById('display').value+='5'">
+                    <input type="button" value="6" onclick="document.getElementById('display').value+='6'">
+                    <input type="button" value="-" onclick="document.getElementById('display').value+='-'">
+                 </div>
+                  <br>
+                  <div>
+                  <input type="button" value="7" onclick="document.getElementById('display').value+='7'">
+                  <input type="button" value="8" onclick="document.getElementById('display').value+='8'">
+                  <input type="button" value="9" onclick="document.getElementById('display').value+='9'">
+                  <input type="button" value="*" onclick="document.getElementById('display').value+='*'">
+                  </div>
+                  <br>
+
+                  <div>
+                    <input type="button" value="C" onclick="document.getElementById('display').value=''">
+                  <input type="button" value="0" onclick="document.getElementById('display').value+='0'">
+                  <input type="button" value="=" onclick="document.getElementById('display').value=eval(document.getElementById('display').value)">
+                  <input type="button" value="/" onclick="document.getElementById('display').value+='/'">
+                  </div>
+                </form>
+              </div>
+          </div>     
+    </body>
+</html>

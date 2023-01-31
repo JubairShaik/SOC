@@ -1,0 +1,179 @@
+<!-- Question No 6 -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temparature</title>
+</head>
+<body>
+
+    <style>
+        *{
+            margin: 10px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(255,21,108,1) 100%);
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+          }
+          
+          input {
+            width: 200px;
+            height: 30px;
+            font-size: 18px;
+            padding: 10px;
+            margin: 10px;
+          }
+          
+          button {
+            width: 100px;
+            height: 40px;
+            font-size: 18px;
+            margin-top: 10px;
+          }
+          
+          #resultContainer {
+            margin-top: 20px;
+          }
+          #result{
+            font-size: 8rem;
+          }
+          .MainForm{
+            display: flex;
+            flex-direction: column;
+          }
+          .formbg{
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgb(240, 231, 234) 100%);
+            box-shadow: 10rem;
+          }
+          
+    </style>
+
+    <!-- 6.A) -->
+    <h1>SignUpForm</h1>
+    <div class="formbg">
+      <form action="#" class="MainForm">
+        <div >
+          <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="firstname"> 
+         
+        </div>
+        <div>
+          
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lastname"> 
+        </div>
+      
+        <div>
+          <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"> 
+      
+        </div>
+        <div>
+          <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        </div><br><br>
+      
+       <div>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value=""></option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="UK">UK</option>
+        </select>
+       </div>
+       
+        
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"></div>
+         
+     <div>  
+       <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+    </div>
+      
+        <div>
+          <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        </div>
+      
+      <div> 
+         <label for="cpassword">Confirm Password:</label>
+        <input type="password" id="cpassword" name="cpassword"></div>
+      
+        <div><input type="checkbox" id="terms" name="terms">
+          <label for="terms">I agree to the terms of use</label></div>
+      
+          <div>  
+            <button  type="submit">Submit</button>
+            <button  type="submit">Cancel</button>
+            
+          </div>
+      </form>
+    </div>
+
+
+
+
+     
+    <!-- 6)C  -->
+
+    <H1> Converting Temparature</H1>
+    <div class="container">
+        <h1>Celsius to Fahrenheit Converter</h1>
+
+        <form >
+          <h2 for="temperatureInput">Enter temperature in Celsius:</h2>
+          <input type="text" id="temperatureInput" name="temperatureInput">
+          <button onclick="convertButton()">Convert</button>
+        </form>
+
+        <div id="resultContainer">
+          <p id="result">_____</p>
+        </div>
+      </div>
+  
+    
+     <script>
+
+       function convertButton(){
+
+        const temperatureInput = document.getElementById("temperatureInput");
+        const result = document.getElementById("result");
+          event.preventDefault();
+
+          const temperatureInCelsius = parseFloat(temperatureInput.value);
+          const temperatureInFahrenheit = (temperatureInCelsius * 9/5) + 32;
+
+          result.textContent = temperatureInFahrenheit+"°F";
+       }
+      </script>
+</body>
+</html>

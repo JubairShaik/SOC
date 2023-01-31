@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRST QUESTION</title>
+ 
+<!-- For Styles  -->
+    <style>
+        *{
+            margin: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        
+        body{
+            background: rgb(70, 142, 242);
+        }
+        
+        .text{
+            font-size: 4rem;
+            /* max-width: 10rem; */
+            letter-spacing: 1rem;
+        }
+        
+        li{
+            font-size: 1rem;
+            text-decoration: none;
+            color: rgb(233, 151, 30);
+            list-style: none;
+            padding: 4px; 
+            
+        }
+        
+        a{
+            color: rgb(194, 190, 190);
+            background-color: rgb(65, 65, 245); 
+            padding: .3rem;
+            border-radius: 2rem;
+        }
+        
+         
+        .contactus{
+            font-size: x-large;
+            font-size:9rem;
+        }
+        
+        .aboutus{
+            font-size:9rem;
+        
+        }
+        
+        
+        
+        /* :increment and :decrement Styles */
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        button {
+              /* font-size: 10rem; */
+            padding: 10px 20px;
+            font-size: 30px;
+            border: 3px solid rgb(49, 133, 251);
+            border-radius: 5px;
+            cursor: pointer; 
+          }
+          
+          #counter {
+            padding: 0 20px;
+            font-size: 70px;
+          }
+    </style>
+
+    
+
+</head>
+
+
+<body>
+    <div>
+       <h1> This Is Main Page</h1>
+        <li>
+            <a href="../QUESTION1/contact.html"> click here to Contact page</a>
+        </li>
+        <li>
+            <a
+            class="about"
+             href="../QUESTION1/about.html"
+             > click here to About Page</a>
+        </li>
+       </ul>
+    </div>
+
+  <!-- CSS PORTION  -->
+    <div>
+        <h3 class="text">Welcome to Our Website</h3>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. 
+            Eveniet unde dolores  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Perferendis ipsam, beatae id eaque optio ipsum dignissimos ex placeat reprehenderit!
+              Nobis. aut nihil placeat fugit
+             voluptas officiis.</p>
+    </div>
+
+    <div  >
+
+
+        <h2>This Is QUESTION 1)c </h2>
+        Here is a simple implementation of an increment and decrement button using HTML, CSS, and JavaScript:
+ 
+
+
+              <div class="container">
+                <button id="decrement">-</button>
+                <span id="counter">0</span>
+                <button id="increment">+</button>
+              </div>
+    </div>     
+     <script>
+
+        const decrementButton = document.getElementById('decrement');
+        const  counter = document.getElementById('counter');
+        const  incrementButton = document.getElementById('increment');
+
+        
+        decrementButton.addEventListener('click' ,()=>{
+            counter.textContent  = parseInt(counter.textContent)-1;
+        });
+        
+        
+        incrementButton.addEventListener('click', ()=> {
+            counter.textContent  = parseInt(counter.textContent)+1;
+        }); 
+
+         
+     </script>
+
+
+    
+</body>
+</html>

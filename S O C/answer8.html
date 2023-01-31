@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<html>
+
+<head>
+<style>
+
+
+	table,
+	th,
+	td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	
+	th,
+	td {
+		padding: 20px;
+	}
+	
+	th {
+		text-align: left;
+	}
+    .textcol{
+        background-color: bisque;
+        padding: 5px;
+        border: 5px soild black;
+    }
+	.tablestyle{
+		width: 100%;
+		
+	}
+	#result{
+		font-size: 10rem;
+		color: rgb(42, 42, 255);
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+	}
+	</style>
+ 
+
+<table class="tablestyle">
+		<caption class="textcol">STUDENTS MARK SHEET</caption>
+		<tr>
+			<th>Name</th>
+			<th>maths</th>
+			<th>Science</th>
+            <th>English</th>
+            <th>Physics</th>
+            <th>General Knowledge</th> 
+		</tr>
+		<tr>
+			<td> David</td>
+			<td>85</td>
+			<td>87</td>
+			<td>17</td>
+			<td>37</td>
+			<td>67</td>
+		</tr>
+		<tr>
+			<td> David</td>
+			<td> 85</td>
+			<td>87</td>
+			<td>17</td>
+			<td>37</td>
+			<td>67</td>
+		</tr>
+		<tr>
+			<td> David</td>
+			<td> 85</td>
+			<td>87</td>
+			<td>17</td>
+			<td>37</td>
+			<td>67</td>
+		</tr>
+		<tr>
+			<td>David</td>
+			<td>85</td>
+			<td>87</td>
+			<td>17</td>
+			<td>37</td>
+			<td>67</td>
+		</tr>
+		<tr>
+			<td> David</td>
+			<td> 85</td>
+			<td>87</td>
+			<td>17</td>
+			<td>37</td>
+			<td>67</td>
+		</tr>		 
+</table>
+
+
+
+
+    <div class="otp">
+        <h1>OTP Question</h1>
+        <button onclick="generateOtp()">CLICK HERE TO GENERATE OTP</button>
+		<div>
+			<p id="result"></p>
+		</div>
+    </div>
+
+
+    <script>
+		function generateOtp(){
+			let otp = Math.ceil((Math.random()*1000000));  
+		    result.textContent = document.getElementById("result");
+			result.textContent = otp;
+		}
+    </script>
+    
+
+
+
+</body>
+</html>

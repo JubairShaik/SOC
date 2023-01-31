@@ -1,0 +1,129 @@
+<!-- <Question -04> -->
+
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION04</title>
+</head>
+
+<style>
+    #gameContainer{
+         padding: 4px;
+        background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 74%, rgba(0,212,255,1) 100%);
+    }
+    .guess,#result{
+        font-size: 3rem;
+        display: flex; justify-content: center;
+        color: azure;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    input{
+        width: 30%;
+        height: 53px;
+        font-size: 3rem;
+        color: rgb(6, 6, 6);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+    }
+    .inputclass{
+        display: flex;
+        gap: .4rem;
+        justify-content: center;
+    }
+    #guessButton{
+        
+        font-size: 2rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    }
+   
+</style>
+<body>
+
+
+  <div>
+    <ul>
+      <li>
+        Andhra
+        <ul>
+          <li>Amaaravathi</li>
+        </ul>
+      </li>
+      <li>
+        Andhra
+        <ul>
+          <li>Amaaravathi</li>
+        </ul>
+      </li>
+      <li>
+        Andhra
+        <ul>
+          <li>Amaaravathi</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+    <!--4C) Guess The Number :) -->
+
+    <div>
+        <div id="gameContainer">
+        <p id="message" class="guess">Guess a number between 1 and 100:</p>
+        <div class="inputclass">
+            <input type="number"  placeholder="Guess The Number" id="guessInput">
+            <button id="guessButton">Guess</button>
+        </div>
+        <p id="result">Try Your Luck</p>
+      </div>
+    </div>
+
+    <script>
+
+      <!-- const targetNumber -->
+
+
+
+
+
+
+      const targetNumber = Math.ceil(Math.random()*100);
+      const guessInput = document.getElementById("guessInput");
+      const guessButton = document.getElementById("guessButton");
+      const result = document.getElementById("result");
+
+      
+      
+      guessButton.addEventListener("click", function(){
+        const userGuess = Number(guessInput.value);
+        if(userGuess === targetNumber){
+          result.textContent="You have Won The Game"
+        }
+        else if(userGuess> targetNumber){
+          result.textContent="Too High";
+        }
+        else{
+          result.textContent="Too Low";
+        }
+
+       })
+      
+
+         console.log(targetNumber)  
+        //it displays the targetNumber in Console  
+
+   </script>
+
+
+
+ 
+</body>
+</html>

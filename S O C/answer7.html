@@ -1,0 +1,176 @@
+<!-- QUESTION N0 07. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Of Birth</title>
+</head>
+
+<body>
+
+  <style>
+
+    .verb { color: green; }
+    .noun { color: blue; }
+    .preposition { color: rgb(249, 249, 65); }
+    body{
+      background-color: rgb(253, 111, 76);
+    }
+
+
+
+
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+    }
+
+    input {
+      width: 170px;
+      height: 30px;
+      font-size: 18px;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    button {
+      width: 100px;
+      height: 40px;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    #resultContainer {
+      margin-top: 20px;
+    }
+  </style>
+
+
+<div>
+    <p>
+      <span class="verb">The</span>
+      <span class="noun">dog</span>
+      <span class="verb">ran</span>
+      <span class="preposition">through</span>
+      <span class="noun">the</span>
+      <span class="noun">park</span>
+      <span class="verb">quickly</span>
+      <span class="preposition">on</span>
+      <span class="noun">Saturday</span>
+      <span class="preposition">morning</span>
+      <span class="preposition">.</span>
+    </p>
+    <p>
+      <span class="noun">The</span>
+      <span class="noun">city</span>
+      <span class="verb">announced</span>
+      <span class="preposition">a</span>
+      <span class="noun">new</span>
+      <span class="noun">policy</span>
+      <span class="verb">yesterday</span>
+      <span class="preposition">.</span>
+    </p>
+    <p>
+      <span class="verb">She</span>
+      <span class="verb">walks</span>
+      <span class="preposition">to</span>
+      <span class="noun">the</span>
+      <span class="noun">store</span>
+      <span class="preposition">every</span>
+      <span class="noun">morning</span>
+      <span class="preposition">.</span>
+    </p>
+    <p>
+      <span class="verb">They</span>
+      <span class="verb">are</span>
+      <span class="verb">going</span>
+      <span class="preposition">on</span>
+      <span class="noun">a</span>
+      <span class="noun">trip</span>
+      <span class="preposition">next</span>
+      <span class="noun">week</span>
+      <span class="preposition">.</span>
+    </p>
+    <p>
+      <span class="noun">The</span>
+      <span class="noun">sun</span>
+      <span class="verb">shines</span>
+      <span class="preposition">brightly</span>
+      <span class="preposition">in</span>
+      <span class="noun">the</span>
+      <span class="noun">sky</span>
+      <span class="preposition">.</span>
+    </p>
+</div>
+
+
+  <div class="container">
+    <h1>Age Calculator</h1>
+    <form>
+      <label for="birthYearInput">Enter birth year:</label>
+      <input type="text" id="birthYearInput" name="birthYearInput">
+
+      <label for="birthMonthInput">Enter birth month (1-12):</label>
+      <input type="text" id="birthMonthInput" name="birthMonthInput">
+
+      <label for="birthDateInput">Enter birth date:</label>
+      <input type="text" id="birthDateInput" name="birthDateInput">
+
+      <button onclick="calculateButton()">Calculate</button>
+
+    </form>
+
+    <div id="resultContainer">
+      <p id="result"></p>
+    </div>
+  </div>
+
+
+
+  <!-- javaScript -->
+
+  <script>
+
+    function calculateButton() {
+
+      const birthYear = parseInt(document.getElementById("birthYearInput"));
+      const birthMonth = parseInt(document.getElementById("birthMonthInput"));
+      const birthDate = parseInt(document.getElementById("birthDateInput"));
+
+      const resultContainer = document.getElementById("resultContainer");
+
+      const result = document.getElementById("result");
+
+      event.preventDefault();
+ 
+      const currentDate = new Date();
+      const currentYear = currentDate.getFullYear();
+      const currentMonth = currentDate.getMonth();
+      const currentDateOfMonth = currentDate.getDate();
+
+      let age = currentYear - birthYear;
+      if (currentMonth < birthMonth || 
+      (currentMonth === birthMonth && currentDateOfMonth < birthDate)) {
+        age -= 1;
+      }
+      result.textContent = age + " years";
+    
+    }
+  </script>
+
+
+
+
+
+</body>
+
+</html>
